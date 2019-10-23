@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ChekboxApp</string>
+    <string name="app_enter">Ввод денег</string>
+    <string name="app_inform">Информация об оплате</string>
+    <string name="app_button">OK</string>
+    <string name="app_card">С банковской карты</string>
+    <string name="app_mobile">С мобильного телефона</string>
+    <string name="app_cash">Наличными по адресу</string>
+</resources>
