@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="inputMoney_marginStart">102dp</dimen>
+    <dimen name="inputMoney_marginTop">58dp</dimen>
+    <dimen name="inputInfo_marginTop">9dp</dimen>
+    <dimen name="btnOK_marginTop">76dp</dimen>
+    <dimen name="btnOK_marginEnd">34dp</dimen>
+    <dimen name="bankCardChkBx_marginTop">21dp</dimen>
+    <dimen name="mobilePhoneChkBx_marginTop">10dp</dimen>
+    <dimen name="cashAddressChkBx_marginTop">9dp</dimen>
+</resources>
