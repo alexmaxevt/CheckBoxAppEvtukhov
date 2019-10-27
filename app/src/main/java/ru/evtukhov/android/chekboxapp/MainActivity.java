@@ -3,6 +3,7 @@ package ru.evtukhov.android.chekboxapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -47,19 +48,22 @@ public class MainActivity extends AppCompatActivity {
 
     CompoundButton.OnCheckedChangeListener checkedChangeListener = new CompoundButton.OnCheckedChangeListener() {
         @Override
-        public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-            if (b) {
+        public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+            if (isChecked) {
                 switch (compoundButton.getId()) {
                     case R.id.bankCardChkBx:
                         resetCheckBoxes();
                         mBankCardChkBx.setChecked(true);
+                        mInputInfo.setInputType(InputType.TYPE_CLASS_NUMBER);
                         break;
                     case R.id.mobilePhoneChkBx:
                         resetCheckBoxes();
                         mMobilePhoneChkBx.setChecked(true);
+                        mInputInfo.setInputType(InputType.TYPE_CLASS_PHONE);
                         break;
                     case R.id.cashAddressChkBx:
                         resetCheckBoxes();
+                        mInputInfo.setInputType(InputType.TYPE_CLASS_TEXT);
                         mCashAddressChkBx.setChecked(true);
                         break;
                     default:
